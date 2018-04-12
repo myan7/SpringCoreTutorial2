@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id	="convert" class="com.bean.Lower2Upper"> 
+		<property name="str">
+			<value>abcdefg</value>
+		</property>
+</bean> 
+
+<!-- <bean id	="convert" class="com.bean.Upper2Lower"> 
+		<property name="str" value = "ZYXWVUTSR" />
+</bean> -->
+
+
+<!-- <bean id	="user" class="com.bean.CheckThroughXML">
+</bean> -->
+<bean id	="user" class="com.bean.CheckThroughDB">
+</bean>
+</beans>
